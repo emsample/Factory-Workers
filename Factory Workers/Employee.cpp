@@ -36,3 +36,32 @@ void Employee::setHireDate(string date)
     hireDate = date;
 }
 
+// PRE: none
+// POST: returns name
+string Employee::getName() const
+{
+    return name;
+}
+
+// PRE: none
+// POST: returns employeeNumber
+int Employee::getEmployeeNumber() const
+{
+    return employeeNumber;
+}
+
+// PRE: none
+// POST: returns hireDate
+string Employee::getHireDate() const
+{
+    return hireDate;
+}
+
+// PRE: none
+// POST: prints employee info
+void Employee::printEmployee() const
+{
+    cout << "Name: " << name << endl;
+    cout << "Employee Number: " << employeeNumber << endl;
+    cout << "Hire Date: " << hireDate << endl;
+}
