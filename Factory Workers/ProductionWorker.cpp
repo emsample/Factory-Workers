@@ -34,3 +34,22 @@ void ProductionWorker::setHourlyPayRate(double rate)
     hourlyPayRate = rate;
 }
 
+// PRE: none
+// POST: returns hourlyPayRate
+double ProductionWorker::getHourlyPayRate() const
+{
+    return hourlyPayRate;
+}
+
+// PRE: none
+// POST: prints employee + worker data
+void ProductionWorker::printProductionWorker() const
+{
+    printEmployee();
+
+    if (shift == 1) cout << "Shift: Day" << endl;
+    else if (shift == 2) cout << "Shift: Night" << endl;
+
+    cout << fixed << setprecision(2);
+    cout << "Hourly Pay Rate: $" << hourlyPayRate << endl;
+}
