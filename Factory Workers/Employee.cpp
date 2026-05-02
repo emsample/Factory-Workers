@@ -8,3 +8,9 @@ Employee::Employee()
     employeeNumber = 0;
     hireDate = "";
 }
+Employee::Employee(string n, int num, string date)
+{
+    name = n;
+    employeeNumber = num;
+    hireDate = date;
+}
