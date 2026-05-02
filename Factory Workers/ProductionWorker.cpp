@@ -20,5 +20,17 @@ ProductionWorker::ProductionWorker(string n, int num, string date, int s, double
     hourlyPayRate = rate;
 }
 
+// PRE: s is 1 or 2
+// POST: shift updated
+void ProductionWorker::setShift(int s)
+{
+    shift = s;
+}
 
+// PRE: rate >= 0
+// POST: hourlyPayRate updated
+void ProductionWorker::setHourlyPayRate(double rate)
+{
+    hourlyPayRate = rate;
+}
 
