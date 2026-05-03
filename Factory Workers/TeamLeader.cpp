@@ -75,3 +75,4 @@ void TeamLeader::printTeamLeader() const
     cout << "Monthly Bonus: $" << monthlyBonus << endl;
     cout << "Required Training Hours: " << requiredTrainingHours << endl;
     cout << "Attended Training Hours: " << attendedTrainingHours << endl;
+}
